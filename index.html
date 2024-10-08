@@ -8,8 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <head>
+        <nav>
+            <h1 class="title">Game of Morpion</h1>
+        </nav>
+    </head>
+    <section>
+        <button id="toggle-rules">Afficher les règles du jeu</button>
+        <aside id="rules-section" class="rules hidden">
+            <h2 >Règles : </h2>
+            <ul>
+                <li>Le jeu se joue à deux : Joueur 1 (X) et Joueur 2 (O).</li>
+                <li>Chaque joueur joue à tour de rôle en cliquant sur une case vide.</li>
+                <li>Le but est d'aligner 3 symboles identiques (croix ou cercle) soit horizontalement, verticalement ou en diagonale.</li>
+                <li>Le jeu se termine lorsqu'un joueur a aligné trois symboles ou qu'il n'y a plus de cases vides (match nul).</li>
+                <li>Après une victoire ou un match nul, le jeu se réinitialise automatiquement.</li>
+            </ul>
+        </aside>
+    </section>
     <section class="main-page">
-        <section class="section">
+        <section   id="game-board" class="section">
             <div class="yellow">
                 <button class="button" id="button-1">                
                     <img src="" alt="" class="cross">
